@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Rock Paper Scissors</title>
+    </head>
+
+    <body>
+        <script>
+            
+
+            
+            const playerSelection = prompt("Please make a selection: rock, paper, or scissors.")
+            const playerSelectionLowerCase = playerSelection.toLowerCase()
+            console.log(playerSelection);
+            
+
+            const choices = ["rock", "paper", "scissors"];
+            let computerSelection = choices[Math.floor(Math.random() * choices.length)];
+            let result
+            console.log(computerSelection);
+
+            chooseWinner();
+
+            function chooseWinner() {
+                if (playerSelectionLowerCase === "rock" && computerSelection === "paper") {
+                result = "You lose! Paper beats rock!";
+                } 
+                if (playerSelectionLowerCase === "paper" && computerSelection === "rock") {
+                result = "You win! Paper beats rock!";
+                } 
+                if (playerSelectionLowerCase === "paper" && computerSelection === "scissors") {
+                result = "You lose! Scissors beats paper!";
+                } 
+                if (playerSelectionLowerCase === "scissors" && computerSelection === "paper") {
+                result = "You win! Scissors beats paper!";
+                } 
+                if (playerSelectionLowerCase === "scissors" && computerSelection === "rock") {
+                result = "You lose! Rock beats scissors!";
+                } 
+                if (playerSelectionLowerCase === "rock" && computerSelection === "scissors") {
+                result = "You win! Rock beats scissors!";
+                } 
+                if (playerSelectionLowerCase === computerSelection) {
+                result = "Tie game!";
+                }
+                console.log(result);
+            }
+
+            
+
+        </script>
+    </body>
+</html>
