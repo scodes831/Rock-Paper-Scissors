@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #c9e8ff;
+}
+
+/* heading styling */
+h1 {
+    margin-top: 100px;
+    font-size: 48px;
+    color: black;
+}
+h1, h2 {
+    text-align: center;
+}
+
+.selections {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.points {
+    text-align: center;
+}
+
+.scores {
+    margin-left: 25px;
+    font-size: 20px;
+}
+
+.round {
+    text-align: center;
+}
+
+.round-result {
+    display: table;
+    margin: 0 auto;
+}
+
+.round {
+    color: red;
+    font-size: 28px;
+}
+
+.total-points {
+    color: blue;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#player-choice, #computer-choice {
+    font-weight: 900;
+}
+
+/* button styling */
+.options {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    padding: 20px;
+    margin-left: 10px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    min-width: 150px;
+    max-width: 150px;
+    border: none;
+    font-size: 24px;
+    background-color:#3c91c9;
+    color: white;
+}
